@@ -6,7 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video And Audio Media</title>
+    <link rel="stylesheet" type="text/css" href="/css/mysite.css">
+    <!--CSS Styling-->
+    <style>
+        /* text blinker */
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blink_me_alarm {
+            animation: blinker 2s step-start infinite;
+            color: red;
+        }
+
+        /*Rotating Text*/
+        .div1 {
+            width: 300px;
+            height: 25px;
+            border: 1px solid #4f2fb6;
+            transition: transform 2s;
+        }
+
+        .div1:hover {
+            width: 300px;
+            height: 25px;
+            transform: rotate(360deg)
+        }
+    </style>
 </head>
+
 
 <body>
 
@@ -39,14 +69,7 @@
 
         <br>
         <!--Animated video label-->
-        <svg width="400" height="20">
-            <text x="125" y="15" fill="red">
-                Student Support Video Clip
-                <!--Animation-->
-                <animate attributeType="CSS" attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite" />
-            </text>
-            Sorry, your browser does not support inline SVG
-        </svg>
+        <h4 class="blink_me_alarm">Student Support Video Clip</h4>
 
 
         <br>
@@ -60,16 +83,11 @@
 
         <br>
         <!--Animated Audio Label-->
-        <svg width="400" height="20">
-            <text x="125" y="15" fill="red">›
-                Student Support Audio Clip
-                <!--Animation-->
-                <animate attributeType="CSS" attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite" />
-            </text>
-            Sorry, your browser does not support inline SVG
-        </svg>
+        <h4 class="blink_me_alarm">Student Support Audio Clip</h4>
 
         <br>
+
+        <div class = "div1">GCU is a great university!</div>
 
         <!--Hot Link to Home Page-->
 
