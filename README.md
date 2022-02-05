@@ -1,3 +1,4 @@
 # web-development
-GCU web dev course, personal projects
-Topics build on each other
+GCU web dev course
+Example Syllabus
+Personal Website
