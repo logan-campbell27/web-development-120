@@ -1,4 +1,3 @@
-# web-development
+# syllabus-website
 GCU web dev course
-Example Syllabus
-Personal Website
+Example syllabus done in class
