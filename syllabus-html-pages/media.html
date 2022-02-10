@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video And Audio Media</title>
+    <link rel="stylesheet" type="text/css" href="/css/mysite.css">
+    <!--CSS Styling-->
+    <style>
+        /* text blinker */
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blink_me_alarm {
+            animation: blinker 2s step-start infinite;
+            color: red;
+        }
+
+        /*Rotating Text*/
+        .div1 {
+            width: 300px;
+            height: 25px;
+            border: 1px solid #4f2fb6;
+            transition: transform 2s;
+        }
+
+        .div1:hover {
+            width: 300px;
+            height: 25px;
+            transform: rotate(360deg)
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!--Media file content-->
+
+    <div align="center">
+        <h1>Video and Audio Media</h1>
+
+        <!--GCU Doctrine Video-->
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JdVLnLKC-pk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
+        <br>
+
+        <h4>
+            Grand Canyon University Doctrinal Statement
+        </h4>
+
+        <!--Chase Video Content-->
+
+        <video width="320" height="240" controls>
+            <source src="/media/chase.mov" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <br>
+        <!--Animated video label-->
+        <h4 class="blink_me_alarm">Student Support Video Clip</h4>
+
+
+        <br>
+
+        <!--Come Together Audio Content-->
+
+        <audio controls>
+            <source src="/media/come_together.mp3" type="audio/mp3">
+            Your browser does not support the audio tag
+        </audio>
+
+        <br>
+        <!--Animated Audio Label-->
+        <h4 class="blink_me_alarm">Student Support Audio Clip</h4>
+
+        <br>
+
+        <div class = "div1">GCU is a great university!</div>
+
+        <!--Hot Link to Home Page-->
+
+        <a href="index.html">Back to Home Page</a>
+
+    </div>
+
+</body>
+
+</html>
